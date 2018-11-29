@@ -1,0 +1,26 @@
+*** itests starting
+*** compiling modules: frontend
+*** compiling modules: backend
+*** Build and itest: saving previous output
+*** Build and itest: compiling system
+*** Build and itest: running itest1
+*** Build and itest: running itest2
+*** Build and itest: running itest3
+*** Build and itest: running itest4
+*** Build and itest: running itest5
+*** Build and itest: running itest6
+*** Build and itest: running itest7
+*** Build and itest: running itest8
+*** Build and itest: running itest9
+*** Build and itest: comparing outputs (diff)
+*** Comparing itest1.out
+*** Comparing itest2.out
+*** Comparing itest3.out
+*** Comparing itest4.out
+*** Comparing itest5.out
+*** Comparing itest6.out
+*** Comparing itest7.out
+*** Comparing itest8.out
+*** Comparing itest9.out
+*** cleaning up ...
+...itests finished

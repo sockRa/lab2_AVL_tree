@@ -1,0 +1,66 @@
+
+ *** Start of Tree program 
+***************************************************************
+***                                                         ***
+***   m:   display this menu                                ***
+***   t:   display the tree (2D)                            ***
+***                                                         ***
+***   a:   add a value to the tree                          ***
+***   r:   remove a value from the tree                     ***
+***   f:   find a value in the tree                         ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice =>  z 
+
+ Enter choice =>  t 
+
+ *** Tree is empty 
+ Enter choice =>  a 
+ Enter a value:   50
+
+ Enter choice =>  a 
+ Enter a value:   38
+
+ Enter choice =>  a 
+ Enter a value:   55
+
+ Enter choice =>  a 
+ Enter a value:   30
+
+ Enter choice =>  a 
+ Enter a value:   40
+
+ Enter choice =>  a 
+ Enter a value:   60
+
+ Enter choice =>  a 
+ Enter a value:   45
+
+ Enter choice =>  r 
+ Enter a value:   60
+
+ TO BE DONE 
+ Enter choice =>  t 
+
+ TO BE DONE 
+ ---------------------------------------
+ TO BE DONE 
+ TO BE DONE 
+ TREE:        nodes:  0   height: 0 
+ ---------------------------------------
+ inorder:    30  38  40  45  50  55  60 
+ preorder:  
+ TO BE DONE 
+ postorder: 
+ TO BE DONE 
+ Treearray: 
+ TO BE DONE 
+ ---------------------------------------
+
+ Enter choice =>  q 
+ *** BYE BYE! ***
+ *** End of Tree program 

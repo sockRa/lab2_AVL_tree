@@ -1,0 +1,73 @@
+
+echo "*** tests starting"
+
+echo "*** compiling modules: frontend"
+gcc -Wall -c Dmenu.c
+gcc -Wall -c menu.c
+
+echo "*** compiling modules: backend"
+gcc -Wall -c betree.c
+
+echo "*** Build and Test: saving previous output"
+cp AVLtest1.out  AVLtest1.old
+cp AVLtest2.out  AVLtest2.old
+cp AVLtest3.out  AVLtest3.old
+cp AVLtest4.out  AVLtest4.old
+cp AVLtest5.out  AVLtest5.old
+cp AVLtest6.out  AVLtest6.old
+cp AVLtest7.out  AVLtest7.old
+cp AVLtest8.out  AVLtest8.old
+cp AVLtest9.out  AVLtest9.old
+
+echo "*** Build and Test: compiling system"
+gcc -Wall -g Dmenu.c menu.c betree.c -o tree -lm
+
+echo "*** Build and Test: running test1"
+./tree < test1  > AVLtest1.out
+echo "*** Build and Test: running test2"
+./tree < test2  > AVLtest2.out
+echo "*** Build and Test: running test3"
+./tree < test3  > AVLtest3.out
+echo "*** Build and Test: running test4"
+./tree < test4  > AVLtest4.out
+echo "*** Build and Test: running test5"
+./tree < test5  > AVLtest5.out
+echo "*** Build and Test: running test6"
+./tree < test6  > AVLtest6.out
+echo "*** Build and Test: running test7"
+./tree < test7  > AVLtest7.out
+echo "*** Build and Test: running test8"
+./tree < test8  > AVLtest8.out
+echo "*** Build and Test: running test9"
+./tree < test9  > AVLtest9.out
+
+
+echo "*** Build and Test: comparing outputs (diff)"
+echo "*** Comparing test1.out"
+diff AVLtest1.old  AVLtest1.out
+echo "*** Comparing test2.out"
+diff AVLtest2.old  AVLtest2.out
+echo "*** Comparing test3.out"
+diff AVLtest3.out  AVLtest3.old
+echo "*** Comparing test4.out"
+diff AVLtest4.out  AVLtest4.old
+echo "*** Comparing test5.out"
+diff AVLtest5.out  AVLtest5.old
+echo "*** Comparing test6.out"
+diff AVLtest6.out  AVLtest6.old
+echo "*** Comparing test7.out"
+diff AVLtest7.out  AVLtest7.old
+echo "*** Comparing test8.out"
+diff AVLtest8.out  AVLtest8.old
+echo "*** Comparing test9.out"
+diff AVLtest9.out  AVLtest9.old
+
+cat AVLtest1.out AVLtest2.out AVLtest3.out AVLtest4.out AVLtest5.out AVLtest6.out AVLtest7.out AVLtest8.out AVLtest9.out> StartAVLall.out
+
+
+echo "*** cleaning up ..."
+rm *.o 
+
+echo "...tests finished"
+
+

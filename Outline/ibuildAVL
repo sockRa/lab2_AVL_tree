@@ -1,0 +1,74 @@
+
+echo "*** itests starting"
+
+echo "*** compiling modules: frontend"
+gcc -Wall -c Dmenu.c
+gcc -Wall -c menu.c
+
+echo "*** compiling modules: backend"
+gcc -Wall -c betree.c
+
+echo "*** Build and itest: saving previous output"
+cp AVLitest1.out  AVLitest1.old
+cp AVLitest2.out  AVLitest2.old
+cp AVLitest3.out  AVLitest3.old
+cp AVLitest4.out  AVLitest4.old
+cp AVLitest5.out  AVLitest5.old
+cp AVLitest6.out  AVLitest6.old
+cp AVLitest7.out  AVLitest7.old
+cp AVLitest8.out  AVLitest8.old
+cp AVLitest9.out  AVLitest9.old
+
+
+echo "*** Build and itest: compiling system"
+gcc -Wall -g Dmenu.c menu.c betree.c -o tree -lm
+
+echo "*** Build and itest: running itest1"
+./tree < itest1  > AVLitest1.out
+echo "*** Build and itest: running itest2"
+./tree < itest2  > AVLitest2.out
+echo "*** Build and itest: running itest3"
+./tree < itest3  > AVLitest3.out
+echo "*** Build and itest: running itest4"
+./tree < itest4  > AVLitest4.out
+echo "*** Build and itest: running itest5"
+./tree < itest5  > AVLitest5.out
+echo "*** Build and itest: running itest6"
+./tree < itest6  > AVLitest6.out
+echo "*** Build and itest: running itest7"
+./tree < itest7  > AVLitest7.out
+echo "*** Build and itest: running itest8"
+./tree < itest8  > AVLitest8.out
+echo "*** Build and itest: running itest9"
+./tree < itest9  > AVLitest9.out
+
+
+echo "*** Build and itest: comparing outputs (diff)"
+echo "*** Comparing itest1.out"
+diff AVLitest1.old  AVLitest1.out
+echo "*** Comparing itest2.out"
+diff AVLitest2.old  AVLitest2.out
+echo "*** Comparing itest3.out"
+diff AVLitest3.out  AVLitest3.old
+echo "*** Comparing itest4.out"
+diff AVLitest4.out  AVLitest4.old
+echo "*** Comparing itest5.out"
+diff AVLitest5.out  AVLitest5.old
+echo "*** Comparing itest6.out"
+diff AVLitest6.out  AVLitest6.old
+echo "*** Comparing itest7.out"
+diff AVLitest7.out  AVLitest7.old
+echo "*** Comparing itest8.out"
+diff AVLitest8.out  AVLitest8.old
+echo "*** Comparing itest9.out"
+diff AVLitest9.out  AVLitest9.old
+
+
+cat AVLitest1.out AVLitest2.out AVLitest3.out AVLitest4.out AVLitest5.out AVLitest6.out AVLitest7.out AVLitest8.out AVLitest9.out > StartAVLiall.out
+
+echo "*** cleaning up ..."
+rm *.o
+
+echo "...itests finished"
+
+
