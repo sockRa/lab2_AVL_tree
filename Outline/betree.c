@@ -84,8 +84,10 @@ static int max(int a, int b) { return a>b ? a : b; }
 
 static int b_height(treeref T)
 {
-   printf("\n TO BE DONE "); return 0;
-   }
+   return   is_empty(node(T)) ? 0
+   :        max(b_height(get_LC(T)), b_height(get_RC(T))) + 1;  
+   // printf("\n TO BE DONE "); return 0;
+}
    
 /****************************************************************************/
 /* Switch between demo and info (stepwise) mode                             */
@@ -215,7 +217,11 @@ static treeref b_rem(treeref T, int v)
 /****************************************************************************/
 static int b_findb(treeref T, int v)
 {
-   printf("\n TO BE DONE "); return 0;
+   return                    v == get_value(node(T)) ? get_value(node(T))
+   :  !is_empty(get_RC(T)) && v > get_value(node(T)) ? b_findb(get_RC(T), v)
+   :  !is_empty(get_LC(T)) && v < get_value(node(T)) ? b_findb(get_LC(T), v)
+   :  NULLREF;
+   // printf("\n TO BE DONE "); return 0;
 }
 
 /****************************************************************************/
@@ -223,8 +229,10 @@ static int b_findb(treeref T, int v)
 /****************************************************************************/
 static int b_size(treeref T)
 {
-   printf("\n TO BE DONE "); return 0;
-   }
+   return (is_empty(node(T))) ? 0
+   :  b_size(LC(T)) + 1 + b_size(RC(T));
+   // printf("\n TO BE DONE "); return 0;
+}
 
 /****************************************************************************/
 /* display the tree ELEMENT                                                 */
@@ -240,7 +248,12 @@ static void b_disp_el(treeref T)
 /****************************************************************************/
 static void b_disp_pre(treeref T)
 {
-   printf("\n TO BE DONE ");
+   if (!is_empty(T)) {
+      b_disp_el(node(T));
+      b_disp_pre(LC(T));
+      b_disp_pre(RC(T));
+   }
+   // printf("\n TO BE DONE ");
 }
 
 /****************************************************************************/
@@ -259,16 +272,31 @@ static void b_disp_in(treeref T)
 /****************************************************************************/
 static void b_disp_post(treeref T)
 {
-   printf("\n TO BE DONE ");
+   if (!is_empty(T)){
+      b_disp_post(LC(T));
+      b_disp_post(RC(T));
+      b_disp_el(node(T));
+   }
+   // printf("\n TO BE DONE ");
 }
 
 /****************************************************************************/
 /* display the treearray array                                              */
 /****************************************************************************/
 static void b_disp_array()
-{
-   printf("\n TO BE DONE ");
+{  
+   int i = 0;
+   int size = pow(2, b_height(T)) - 1;
+   
+   while(i < size){
+      
+      treearray[i] == NULLREF ? printf(" [*]")
+      :  printf(" [%d]", get_value(treearray[i]));
+
+      i++; 
    }
+   // printf("\n TO BE DONE "); 
+}
 
 /****************************************************************************/
 /* display the TREE information                                             */
@@ -296,7 +324,15 @@ static void print_treeinfo() {
 /* becomes: [5] [2] [7] [*] [3] [6] [*]                                     */
 /****************************************************************************/
 static void T2Q(treeref T, int qpos) {
-   printf("\n TO BE DONE ");
+
+      treearray[qpos] = T;
+
+      if(b_height(T) > 1){
+         T2Q(LC(T), qpos * 2 + 1);
+         T2Q(RC(T), qpos * 2 + 2);
+      }
+    
+   // printf("\n TO BE DONE ");
 }
 
 /****************************************************************************/
@@ -314,8 +350,19 @@ static void T2Q(treeref T, int qpos) {
 static void b_disp_2D()
 {
    if (!is_empty(T)) {
-      printf("\n TO BE DONE ");
+      T2Q(T,0);
+      print_treeinfo();
+      // printf("\n TO BE DONE ");
       /* if (infomode) */  print_treeinfo();
+
+      int i,level = 1;
+      int size = b_height(T)
+      for(i=0;i<size;i++){
+         
+         
+      }
+
+      
       }
    else printf("\n *** Tree is empty ");
    }
