@@ -152,25 +152,46 @@ static void p_DRR(treeref T) {
 
 static treeref SLR(treeref T) {
   p_SLR(T);
-  printf("\n TO BE DONE ");
+  
+  treeref temp = get_RC(T);
+  set_RC(T,get_LC(temp));
+  set_LC(temp,T);
+  return temp;
+
+//   printf("\n TO BE DONE ");
   return T;
   }
 
 static treeref SRR(treeref T) {
   p_SRR(T);
-  printf("\n TO BE DONE ");
+
+  treeref temp = get_LC(T);
+  set_LC(T,get_RC(temp));
+  set_RC(temp,T);
+  return temp;
+  
+
+//   printf("\n TO BE DONE ");
   return T;
   }
 
 static treeref DLR(treeref T) { 
-  p_DLR(T);
-  printf("\n TO BE DONE ");
+   p_DLR(T);
+
+   set_RC(T, SRR(get_RC(T)));
+   return SLR(T);
+
+//   printf("\n TO BE DONE ");
   return T;
   }
 
 static treeref DRR(treeref T) {
-  p_DRR(T);
-  printf("\n TO BE DONE ");
+   p_DRR(T);
+
+   set_LC(T, SLR(LC(T)));
+   return SRR(T);
+
+//   printf("\n TO BE DONE ");
   return T;
   }
 
@@ -178,17 +199,33 @@ static treeref DRR(treeref T) {
 /* AVL BALANCE FUNCTION                                                     */
 /****************************************************************************/
 
-static int HDiff(treeref T) { printf("\n TO BE DONE "); return 0; }
+static int HDiff(treeref T) { return (b_height(LC(T)) - b_height(RC(T)));  return 0; }
 
 static treeref balance(treeref T) {
-   printf("\n TO BE DONE "); return T;
+   treeref temp = NULLREF;
+   
+   if(HDiff(T) > 1){
+      if(HDiff(get_LC(T)) < 0)   temp = DRR(T);
+         else                    temp = SRR(T);         
+   }
+
+   else if(HDiff(T) < -1){
+      if(HDiff(get_RC(T)) > 0)   temp = DLR(T);
+        else                     temp = SLR(T);
+   }     
+   else  temp = T;
+   
+
+   return temp;
    }
 
 /****************************************************************************/
 /* CONStruct a new tree from a LC, Node and RC                              */
 /****************************************************************************/
 static treeref cons(treeref LC, treeref N, treeref RC) {
-   set_LC(N, LC); set_RC(N, RC); return N;
+   set_LC(N, LC); 
+   set_RC(N, RC); 
+   return balance(N);
    }
 
 /****************************************************************************/
@@ -208,8 +245,33 @@ static treeref b_add(treeref T, int v)
 static treeref b_rem(treeref T, int v);
 
 static treeref b_rem(treeref T, int v)
-{
-    printf("\n TO BE DONE "); return T;
+{  
+
+   /* case 1: no child
+      case 2: one child (right)
+      case 3: one child (left)
+      case 4: two children
+
+   */
+
+  treeref   leftChild = NULLREF, rightChild = NULLREF, temp = NULLREF;
+
+
+      // if( !is_empty(node(T)) && get_value(node(T)) != v){
+         
+      //    v < get_value(node(T)) ?  b_rem(LC(T), v)
+      //    :  b_rem(RC(T),v);
+      // }
+      // /* Värdet är funnet, men måste kolla om den har några barn innan */
+      
+      // is_empty(LC(T))   ?  is_empty(RC(T))   ?  T = NULLREF
+      // :  rightChild = RC(T)
+      // :  is_empty(RC(T))   ?  leftChild = LC(T)
+      // :  rightChild = RC(T); leftChild = LC(T);
+
+      // node(T) = NULLREF;
+
+   //  printf("\n TO BE DONE "); 
 }
 
 /****************************************************************************/
@@ -350,16 +412,38 @@ static void T2Q(treeref T, int qpos) {
 static void b_disp_2D()
 {
    if (!is_empty(T)) {
+
+      //Fill array with nullref
+      int i;
+      for(i = 0; i < ARRLEN; i++){
+         treearray[i] = NULLREF;
+      }
+
       T2Q(T,0);
-      print_treeinfo();
       // printf("\n TO BE DONE ");
       /* if (infomode) */  print_treeinfo();
 
-      int i,level = 1;
-      int size = b_height(T)
-      for(i=0;i<size;i++){
+      int count = 0;
+      int u = 0;
+      int levels = b_height(T);
+      int height;
+      for(i=0;i<levels;i++){
+        
+         u = 0;
          
-         
+         while(treearray[count + u] == NULLREF) u++;
+
+         height = b_height(treearray[count + u]);
+
+         for(int y = 0; y< pow(2,i); y++){
+            for(int x = 0; x < height; x++)  printf("\t");
+
+            treearray[count] == NULLREF ? printf("*\t")
+            :  printf("%2d",get_value(treearray[count]));
+
+            count++;
+         }
+         printf("\n");
       }
 
       
