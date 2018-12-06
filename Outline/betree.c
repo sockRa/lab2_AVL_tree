@@ -253,23 +253,46 @@ static treeref b_rem(treeref T, int v)
       case 4: two children
 
    */
+   if(is_empty(node(T)))            return NULLREF;
 
-  treeref   leftChild = NULLREF, rightChild = NULLREF, temp = NULLREF;
+   // Data is in the left sub tree
+   if( v < get_value(node(T)))      b_rem(LC(T),v);
 
+   //Data is in the right sub tree
+   else if(v > get_value(node(T)))  b_rem(RC(T),v);
 
-      // if( !is_empty(node(T)) && get_value(node(T)) != v){
-         
-      //    v < get_value(node(T)) ?  b_rem(LC(T), v)
-      //    :  b_rem(RC(T),v);
-      // }
-      // /* Värdet är funnet, men måste kolla om den har några barn innan */
+   //When the given node is found
+   else{
+      // Case 1: no children
+      if(is_empty(LC(T)) && is_empty(RC(T))){
       
-      // is_empty(LC(T))   ?  is_empty(RC(T))   ?  T = NULLREF
-      // :  rightChild = RC(T)
-      // :  is_empty(RC(T))   ?  leftChild = LC(T)
-      // :  rightChild = RC(T); leftChild = LC(T);
+         T = NULLREF;   
+      }
+      //Case 2: one child (right)
+      else if(is_empty(LC(T))){
+         treeref temp = T;
+         T = RC(T);
+         cons(LC(T),T,RC(T));
+         free(temp);
+      }
+      //Case 3: one child (left)
+      else if(is_empty(RC(T))){
+         treeref temp = T;
+         T = LC(T);
+         cons(LC(T),T,RC(T));
+         free(temp);
+      }
+      //Case 4: two children
+      else{
+         treeref temp = T;
+         T = RC(T);
+         cons(LC(T),T,RC(T));
+         free(temp);
+      }
+   }
+   
+   return T;
 
-      // node(T) = NULLREF;
 
    //  printf("\n TO BE DONE "); 
 }
