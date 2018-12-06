@@ -157,10 +157,7 @@ static treeref SLR(treeref T) {
   set_RC(T,get_LC(temp));
   set_LC(temp,T);
   return temp;
-
-//   printf("\n TO BE DONE ");
-  return T;
-  }
+}
 
 static treeref SRR(treeref T) {
   p_SRR(T);
@@ -169,37 +166,27 @@ static treeref SRR(treeref T) {
   set_LC(T,get_RC(temp));
   set_RC(temp,T);
   return temp;
-  
-
-//   printf("\n TO BE DONE ");
-  return T;
-  }
+}
 
 static treeref DLR(treeref T) { 
    p_DLR(T);
 
    set_RC(T, SRR(get_RC(T)));
    return SLR(T);
-
-//   printf("\n TO BE DONE ");
-  return T;
-  }
+}
 
 static treeref DRR(treeref T) {
    p_DRR(T);
 
    set_LC(T, SLR(LC(T)));
    return SRR(T);
-
-//   printf("\n TO BE DONE ");
-  return T;
-  }
+}
 
 /****************************************************************************/
 /* AVL BALANCE FUNCTION                                                     */
 /****************************************************************************/
 
-static int HDiff(treeref T) { return (b_height(LC(T)) - b_height(RC(T)));  return 0; }
+static int HDiff(treeref T) { return (b_height(LC(T)) - b_height(RC(T)));}
 
 static treeref balance(treeref T) {
    treeref temp = NULLREF;
@@ -438,36 +425,66 @@ static void b_disp_2D()
 
       //Fill array with nullref
       int i;
-      for(i = 0; i < ARRLEN; i++){
-         treearray[i] = NULLREF;
-      }
+      // for(i = 0; i < ARRLEN; i++){
+      //    treearray[i] = NULLREF;
+      // }
 
       T2Q(T,0);
-      // printf("\n TO BE DONE ");
+      // printf("\n TO BE DONE ");size
       /* if (infomode) */  print_treeinfo();
 
+      int height     = b_height(T);
+      int maxSpace   = pow(2,height) - 1;
+      int indent     = maxSpace;
       int count = 0;
-      int u = 0;
-      int levels = b_height(T);
-      int height;
-      for(i=0;i<levels;i++){
-        
-         u = 0;
-         
-         while(treearray[count + u] == NULLREF) u++;
+      int nodeSpace = maxSpace - 1;
 
-         height = b_height(treearray[count + u]);
-
-         for(int y = 0; y< pow(2,i); y++){
-            for(int x = 0; x < height; x++)  printf("\t");
-
-            treearray[count] == NULLREF ? printf("*\t")
-            :  printf("%2d",get_value(treearray[count]));
-
-            count++;
-         }
+      for(i=0;i<height;i++){
          printf("\n");
+         int a = 0;
+         int nodesPerLevel = pow(2,i);
+         
+
+         // Indent outside left tree
+         for(a = 0;   a < indent; a++)  printf(" ");
+
+         indent = indent >> 1;  
+         
+            for(a = 0;a<nodesPerLevel;a++){
+
+               treearray[count] == NULLREF ? printf("*")
+               :  printf("%2d",get_value(treearray[count]));
+               int e = 0;
+
+               for(e = 0; e < nodeSpace;e++)  printf(" ");
+
+               count ++;
+            }
+            if ( i != 0)   nodeSpace = nodeSpace >> 1;
       }
+
+   //    int count = 0;
+   //    int u = 0;
+   //    int levels = b_height(T);
+   //    int height;
+   //    for(i=0;i<levels;i++){
+        
+   //       u = 0;
+         
+   //       while(treearray[count + u] == NULLREF) u++;
+
+   //       height = b_height(treearray[count + u]);
+
+   //       for(int y = 0; y< pow(2,i); y++){
+   //          for(int x = 0; x < height; x++)  printf("\t");
+
+   //          treearray[count] == NULLREF ? printf("*\t")
+   //          :  printf("%2d",get_value(treearray[count]));
+
+   //          count++;
+   //       }
+   //       printf("\n");
+   //    }
 
       
       }
