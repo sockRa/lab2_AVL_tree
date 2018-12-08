@@ -86,7 +86,6 @@ static int b_height(treeref T)
 {
    return   is_empty(node(T)) ? 0
    :        max(b_height(get_LC(T)), b_height(get_RC(T))) + 1;  
-   // printf("\n TO BE DONE "); return 0;
 }
    
 /****************************************************************************/
@@ -235,53 +234,94 @@ static treeref b_rem(treeref T, int v)
 {  
 
    /* case 1: no child
-      case 2: one child (right)
-      case 3: one child (left)
-      case 4: two children
-
+      case 2: one child
+      case 3: two children
    */
-   if(is_empty(node(T)))            return NULLREF;
+  char dir = 'S'; // dir L = left, dir R = right, dir S = special-case
 
-   // Data is in the left sub tree
-   if( v < get_value(node(T)))      b_rem(LC(T),v);
+  treeref parent = T;
+  treeref root = T;
 
-   //Data is in the right sub tree
-   else if(v > get_value(node(T)))  b_rem(RC(T),v);
+   /* find the node, returns if value can't be found. */
+   while(1)
+   {
+      if       (is_empty(T))        return root; 
+      if       (v == get_value(T))  break;
+      parent = T;
+      if       (v < get_value(T))   {T = LC(T); dir = 'L';}
+      else if  (v > get_value(T))   {T = RC(T); dir = 'R';}
+   };
 
    //When the given node is found
-   else{
+   
       // Case 1: no children
       if(is_empty(LC(T)) && is_empty(RC(T))){
-      
-         T = NULLREF;   
+        
+         if(dir == 'L')                set_LC(parent, NULLREF);
+         else if(dir =='R')            set_RC(parent,NULLREF);
+         else                          {T = NULLREF;   return T;}
       }
-      //Case 2: one child (right)
+      //Case 2: one child // Glöm inte special case för root, för alla cases.
       else if(is_empty(LC(T))){
-         treeref temp = T;
-         T = RC(T);
-         cons(LC(T),T,RC(T));
-         free(temp);
+         if(dir == 'L')                cons(RC(T),parent,RC(parent));
+         else if(dir == 'R')           cons(LC(parent),parent,RC(T));
+         else                          root = RC(T); 
       }
-      //Case 3: one child (left)
-      else if(is_empty(RC(T))){
-         treeref temp = T;
-         T = LC(T);
-         cons(LC(T),T,RC(T));
-         free(temp);
+       else if(is_empty(RC(T))){
+         if(dir == 'L')                cons(LC(T),parent,RC(parent));
+         else if(dir == 'R')           cons(LC(parent),parent,LC(T));
+         else                          root = LC(T);
       }
-      //Case 4: two children
+      //Case 3: two children
       else{
-         treeref temp = T;
-         T = RC(T);
-         cons(LC(T),T,RC(T));
-         free(temp);
-      }
-   }
+         if(dir == 'L'){ 
+            
+            if(get_value(parent) == get_value(root)){
+               set_LC(parent,RC(T));
+               set_LC(RC(T),LC(T));
+            }
+            else{
+               cons(RC(T),parent,RC(parent));
+               cons(LC(T),RC(T),RC(RC(T)));
+            }
+         }         
+         else if(dir == 'R'){
+            
+            if(get_value(parent) == get_value(root)){
+               set_RC(parent,LC(T));
+               set_RC(LC(T),RC(T));
+            }
+            else{
+               cons(LC(parent),parent,RC(T));
+               cons(LC(T),RC(T),RC(RC(T)));
+            }
+            
+         }    
+         else{
+              
+               parent = root;
+               treeref newRoot = RC(root);
+
+            if(!is_empty(LC(newRoot))){
+               
+               while(!is_empty(LC(newRoot))){
+                  parent = newRoot;
+                  newRoot = LC(newRoot);
+               }
+               set_LC(parent,NULLREF);
+
+               if(!is_empty(RC(newRoot))){
+                  cons(RC(newRoot),parent,RC(parent));
+               } 
+               cons(LC(root),newRoot,RC(root));
+            }
+            else cons(LC(root),newRoot,RC(newRoot));
+               
+            return newRoot; 
+         }                    
+      }  
    
-   return T;
-
-
-   //  printf("\n TO BE DONE "); 
+   return root;
 }
 
 /****************************************************************************/
@@ -289,11 +329,10 @@ static treeref b_rem(treeref T, int v)
 /****************************************************************************/
 static int b_findb(treeref T, int v)
 {
-   return                    v == get_value(node(T)) ? get_value(node(T))
-   :  !is_empty(get_RC(T)) && v > get_value(node(T)) ? b_findb(get_RC(T), v)
-   :  !is_empty(get_LC(T)) && v < get_value(node(T)) ? b_findb(get_LC(T), v)
-   :  NULLREF;
-   // printf("\n TO BE DONE "); return 0;
+   if (is_empty(T))        return 0;
+   if (get_value(T) == v)  return 1;
+   if (get_value(T) < v)   return b_findb(get_RC(T), v);
+   return b_findb(get_LC(T), v);
 }
 
 /****************************************************************************/
@@ -303,7 +342,6 @@ static int b_size(treeref T)
 {
    return (is_empty(node(T))) ? 0
    :  b_size(LC(T)) + 1 + b_size(RC(T));
-   // printf("\n TO BE DONE "); return 0;
 }
 
 /****************************************************************************/
@@ -325,7 +363,6 @@ static void b_disp_pre(treeref T)
       b_disp_pre(LC(T));
       b_disp_pre(RC(T));
    }
-   // printf("\n TO BE DONE ");
 }
 
 /****************************************************************************/
@@ -349,7 +386,6 @@ static void b_disp_post(treeref T)
       b_disp_post(RC(T));
       b_disp_el(node(T));
    }
-   // printf("\n TO BE DONE ");
 }
 
 /****************************************************************************/
@@ -367,7 +403,6 @@ static void b_disp_array()
 
       i++; 
    }
-   // printf("\n TO BE DONE "); 
 }
 
 /****************************************************************************/
@@ -403,8 +438,6 @@ static void T2Q(treeref T, int qpos) {
          T2Q(LC(T), qpos * 2 + 1);
          T2Q(RC(T), qpos * 2 + 2);
       }
-    
-   // printf("\n TO BE DONE ");
 }
 
 /****************************************************************************/
@@ -425,22 +458,23 @@ static void b_disp_2D()
 
       //Fill array with nullref
       int i;
-      // for(i = 0; i < ARRLEN; i++){
-      //    treearray[i] = NULLREF;
-      // }
-
+      for(i = 0; i < ARRLEN; i++){
+         treearray[i] = NULLREF;
+      }
+      
       T2Q(T,0);
       // printf("\n TO BE DONE ");size
       /* if (infomode) */  print_treeinfo();
 
       int height     = b_height(T);
-      int maxSpace   = pow(2,height) - 1;
+      int maxSpace   = pow(2,height);
+      maxSpace += maxSpace >> 2;
       int indent     = maxSpace;
       int count = 0;
       int nodeSpace = maxSpace - 1;
 
       for(i=0;i<height;i++){
-         printf("\n");
+         printf("\n\n\n");
          int a = 0;
          int nodesPerLevel = pow(2,i);
          
@@ -463,33 +497,9 @@ static void b_disp_2D()
             if ( i != 0)   nodeSpace = nodeSpace >> 1;
       }
 
-   //    int count = 0;
-   //    int u = 0;
-   //    int levels = b_height(T);
-   //    int height;
-   //    for(i=0;i<levels;i++){
-        
-   //       u = 0;
-         
-   //       while(treearray[count + u] == NULLREF) u++;
-
-   //       height = b_height(treearray[count + u]);
-
-   //       for(int y = 0; y< pow(2,i); y++){
-   //          for(int x = 0; x < height; x++)  printf("\t");
-
-   //          treearray[count] == NULLREF ? printf("*\t")
-   //          :  printf("%2d",get_value(treearray[count]));
-
-   //          count++;
-   //       }
-   //       printf("\n");
-   //    }
-
-      
-      }
-   else printf("\n *** Tree is empty ");
    }
+   else printf("\n *** Tree is empty ");
+}
 
 /****************************************************************************/
 /* public operations on the tree                                            */
