@@ -30,39 +30,87 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      9    
+
+
+   7    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     7   9 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9   7 
+ postorer:   7   9 
+ Treearray:  [9] [7] [*]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   8
 
- Enter choice =>  t 
+ *************************************** 
+ *** DRR(T) is SLR(LC(T)) + SRR(T)   *** 
+ *************************************** 
+ *** DRR at node  9 is               *** 
+ *** SLR at node  7 + SRR at node  9 *** 
+ *************************************** 
 
- TO BE DONE 
+
+           9         
+
+
+      7         *         
+
+
+  *     8    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 3 
  ---------------------------------------
  inorder:     7   8   9 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9   7   8 
+ postorer:   8   7   9 
+ Treearray:  [9] [7] [*] [*] [8] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  7                  *** 
+ *************************************** 
+
+
+           9         
+
+
+      8         *         
+
+
+   7    *    *    *    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 3 
+ ---------------------------------------
+ inorder:     7   8   9 
+ preorder:    9   8   7 
+ postorer:   7   8   9 
+ Treearray:  [9] [8] [*] [7] [*] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  9                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+      8    
+
+
+   7     9    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     7   8   9 
+ preorder:    8   7   9 
+ postorer:   7   9   8 
+ Treearray:  [8] [7] [9]
  ---------------------------------------
 
  Enter choice =>  q 

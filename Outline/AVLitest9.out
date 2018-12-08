@@ -1,0 +1,205 @@
+
+ *** Start of Tree program 
+***************************************************************
+***                                                         ***
+***   m:   display this menu                                ***
+***   t:   display the tree (2D)                            ***
+***                                                         ***
+***   a:   add a value to the tree                          ***
+***   r:   remove a value from the tree                     ***
+***   f:   find a value in the tree                         ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice =>  z 
+
+ Enter choice =>  + 
+
+ *** In Info Mode *** 
+ Enter choice =>  t 
+
+ *** Tree is empty 
+ Enter choice =>  a 
+ Enter a value:   50
+
+ Enter choice =>  t 
+
+
+
+  50 
+ ---------------------------------------
+ TREE:        nodes:  1   height: 1 
+ ---------------------------------------
+ inorder:    50 
+ preorder:   50 
+ postorer:  50 
+ Treearray:  [50]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   38
+
+ Enter choice =>  t 
+
+
+
+     50    
+
+
+  38    *    
+ ---------------------------------------
+ TREE:        nodes:  2   height: 2 
+ ---------------------------------------
+ inorder:    38  50 
+ preorder:   50  38 
+ postorer:  38  50 
+ Treearray:  [50] [38] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   55
+
+ Enter choice =>  t 
+
+
+
+     50    
+
+
+  38    55    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:    38  50  55 
+ preorder:   50  38  55 
+ postorer:  38  55  50 
+ Treearray:  [50] [38] [55]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   30
+
+ Enter choice =>  t 
+
+
+
+          50         
+
+
+     38         55         
+
+
+  30    *    *    *    
+ ---------------------------------------
+ TREE:        nodes:  4   height: 3 
+ ---------------------------------------
+ inorder:    30  38  50  55 
+ preorder:   50  38  30  55 
+ postorer:  30  38  55  50 
+ Treearray:  [50] [38] [55] [30] [*] [*] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   40
+
+ Enter choice =>  t 
+
+
+
+          50         
+
+
+     38         55         
+
+
+  30    40    *    *    
+ ---------------------------------------
+ TREE:        nodes:  5   height: 3 
+ ---------------------------------------
+ inorder:    30  38  40  50  55 
+ preorder:   50  38  30  40  55 
+ postorer:  30  40  38  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   60
+
+ Enter choice =>  t 
+
+
+
+          50         
+
+
+     38         55         
+
+
+  30    40    *    60    
+ ---------------------------------------
+ TREE:        nodes:  6   height: 3 
+ ---------------------------------------
+ inorder:    30  38  40  50  55  60 
+ preorder:   50  38  30  40  55  60 
+ postorer:  30  40  38  60  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [60]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   45
+
+ Enter choice =>  t 
+
+
+
+                    50                   
+
+
+          38                   55                   
+
+
+     30         40         *         60         
+
+
+  *    *    *    45    *    *    *    *    
+ ---------------------------------------
+ TREE:        nodes:  7   height: 4 
+ ---------------------------------------
+ inorder:    30  38  40  45  50  55  60 
+ preorder:   50  38  30  40  45  55  60 
+ postorer:  30  45  40  38  60  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [60] [*] [*] [*] [45] [*] [*] [*] [*]
+ ---------------------------------------
+
+ Enter choice =>  r 
+ Enter a value:   60
+
+ Enter choice =>  t 
+
+
+
+                    50                   
+
+
+          38                   55                   
+
+
+     30         40         *         *         
+
+
+  *    *    *    45    *    *    *    *    
+ ---------------------------------------
+ TREE:        nodes:  6   height: 4 
+ ---------------------------------------
+ inorder:    30  38  40  45  50  55 
+ preorder:   50  38  30  40  45  55 
+ postorer:  30  45  40  38  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [*] [*] [*] [*] [45] [*] [*] [*] [*]
+ ---------------------------------------
+
+ Enter choice =>  q 
+ *** BYE BYE! ***
+ *** End of Tree program 

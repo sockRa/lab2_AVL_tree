@@ -14,466 +14,153 @@
 *** Build and Test: running test9
 *** Build and Test: comparing outputs (diff)
 *** Comparing test1.out
-45d44
-<  TO BE DONE 
-47,49c46
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  7   height: 3 
-52,57c49,51
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  preorder:    5   3   1   4   7   6   8 
->  postorder:   1   4   3   6   8   7   5 
->  Treearray:  [5] [3] [7] [1] [4] [6] [8]
-59a54,62
-> 
-> 
->            5         
-> 
-> 
->       3          7         
-> 
-> 
->    1     4     6     8    
+45,53d44
+<  ---------------------------------------
+<  TREE:        nodes:  7   height: 3 
+<  ---------------------------------------
+<  inorder:     1   3   4   5   6   7   8 
+<  preorder:    5   3   1   4   7   6   8 
+<  postorder:   1   4   3   6   8   7   5 
+<  Treearray:  [5] [3] [7] [1] [4] [6] [8]
+<  ---------------------------------------
+< 
 *** Comparing test2.out
-45d44
-<  TO BE DONE 
-47,49c46
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  7   height: 3 
-52,57c49,51
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  preorder:    5   3   1   4   7   6   8 
->  postorder:   1   4   3   6   8   7   5 
->  Treearray:  [5] [3] [7] [1] [4] [6] [8]
-59a54,62
-> 
-> 
->            5         
-> 
-> 
->       3          7         
-> 
-> 
->    1     4     6     8    
-63d65
-<  TO BE DONE 
-66d67
-<  TO BE DONE 
-68,70c69
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  6   height: 3 
-72,78c71,74
-<  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  inorder:     1   3   4   6   7   8 
->  preorder:    6   3   1   4   7   8 
->  postorder:   1   4   3   8   7   6 
->  Treearray:  [6] [3] [7] [1] [4] [*] [8]
-80a77,85
-> 
-> 
->            6         
-> 
-> 
->       3          7         
-> 
-> 
->    1     4    *     8    
-84d88
-<  TO BE DONE 
-87d90
-<  TO BE DONE 
-89,91c92
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  5   height: 3 
-93,99c94,97
-<  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  inorder:     1   3   4   7   8 
->  preorder:    7   3   1   4   8 
->  postorder:   1   4   3   8   7 
->  Treearray:  [7] [3] [8] [1] [4] [*] [*]
-101a100,108
-> 
-> 
->            7         
-> 
-> 
->       3          8         
-> 
-> 
->    1     4    *    *    
-105d111
-<  TO BE DONE 
-108d113
-<  TO BE DONE 
-110,112c115
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  2   height: 2 
-114,120c117,120
-<  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  inorder:     4   8 
->  preorder:    8   4 
->  postorder:   4   8 
->  Treearray:  [8] [4] [*]
-122a123,128
-> 
-> 
->       8    
-> 
-> 
->    4    *    
-126d131
-<  TO BE DONE 
-129d133
-<  TO BE DONE 
-131,133c135
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  1   height: 1 
-135,141c137,140
-<  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  inorder:     8 
->  preorder:    8 
->  postorder:   8 
->  Treearray:  [8]
-143a143,145
-> 
-> 
->    8 
-147d148
-<  TO BE DONE 
-150d150
-<  TO BE DONE 
-152,154c152
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
----
->  TREE:        nodes:  1   height: 1 
-156,162c154,157
-<  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
----
->  inorder:     8 
->  preorder:    8 
->  postorder:   8 
->  Treearray:  [8]
-164a160,162
-> 
-> 
->    8 
-168d165
-<  TO BE DONE 
-171,185c168
-<  TO BE DONE 
+45,53d44
 <  ---------------------------------------
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
+<  TREE:        nodes:  7   height: 3 
 <  ---------------------------------------
 <  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
+<  preorder:    5   3   1   4   7   6   8 
+<  postorder:   1   4   3   6   8   7   5 
+<  Treearray:  [5] [3] [7] [1] [4] [6] [8]
 <  ---------------------------------------
 < 
----
->  *** Tree is empty 
-189d171
-<  TO BE DONE 
-192,206c174
-<  TO BE DONE 
+68,76d58
 <  ---------------------------------------
-<  TO BE DONE 
-<  TO BE DONE 
-<  TREE:        nodes:  0   height: 0 
+<  TREE:        nodes:  6   height: 3 
 <  ---------------------------------------
-<  inorder:     1   3   4   5   6   7   8 
-<  preorder:  
-<  TO BE DONE 
-<  postorder: 
-<  TO BE DONE 
-<  Treearray: 
-<  TO BE DONE 
+<  inorder:     1   3   4   6   7   8 
+<  preorder:    6   3   1   4   7   8 
+<  postorder:   1   4   3   8   7   6 
+<  Treearray:  [6] [3] [7] [1] [4] [*] [8]
 <  ---------------------------------------
 < 
----
->  *** Tree is empty 
+91,99d72
+<  ---------------------------------------
+<  TREE:        nodes:  5   height: 3 
+<  ---------------------------------------
+<  inorder:     1   3   4   7   8 
+<  preorder:    7   3   1   4   8 
+<  postorder:   1   4   3   8   7 
+<  Treearray:  [7] [3] [8] [1] [4] [*] [*]
+<  ---------------------------------------
+< 
+114,122d86
+<  ---------------------------------------
+<  TREE:        nodes:  2   height: 2 
+<  ---------------------------------------
+<  inorder:     4   8 
+<  preorder:    8   4 
+<  postorder:   4   8 
+<  Treearray:  [8] [4] [*]
+<  ---------------------------------------
+< 
+134,142d97
+<  ---------------------------------------
+<  TREE:        nodes:  1   height: 1 
+<  ---------------------------------------
+<  inorder:     8 
+<  preorder:    8 
+<  postorder:   8 
+<  Treearray:  [8]
+<  ---------------------------------------
+< 
+150,158d104
+< 
+<  ---------------------------------------
+<  TREE:        nodes:  1   height: 1 
+<  ---------------------------------------
+<  inorder:     8 
+<  preorder:    8 
+<  postorder:   8 
+<  Treearray:  [8]
+<  ---------------------------------------
 *** Comparing test3.out
-44a45
->  TO BE DONE 
-46c47,49
-<  TREE:        nodes:  7   height: 3 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-49,51c52,57
-<  preorder:    4   2   1   3   6   5   7 
-<  postorder:   1   3   2   5   7   6   4 
-<  Treearray:  [4] [2] [6] [1] [3] [5] [7]
----
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-54,62d59
-< 
-< 
-<            4         
-< 
-< 
-<       2          6         
-< 
-< 
-<    1     3     5     7    
+44a45,53
+>  ---------------------------------------
+>  TREE:        nodes:  7   height: 3 
+>  ---------------------------------------
+>  inorder:     1   2   3   4   5   6   7 
+>  preorder:    4   2   1   3   6   5   7 
+>  postorder:   1   3   2   5   7   6   4 
+>  Treearray:  [4] [2] [6] [1] [3] [5] [7]
+>  ---------------------------------------
+> 
 *** Comparing test4.out
-44a45
->  TO BE DONE 
-46c47,49
-<  TREE:        nodes:  7   height: 3 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-49,51c52,57
-<  preorder:    4   2   1   3   6   5   7 
-<  postorder:   1   3   2   5   7   6   4 
-<  Treearray:  [4] [2] [6] [1] [3] [5] [7]
----
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-54,62d59
-< 
-< 
-<            4         
-< 
-< 
-<       2          6         
-< 
-< 
-<    1     3     5     7    
+44a45,53
+>  ---------------------------------------
+>  TREE:        nodes:  7   height: 3 
+>  ---------------------------------------
+>  inorder:     1   2   3   4   5   6   7 
+>  preorder:    4   2   1   3   6   5   7 
+>  postorder:   1   3   2   5   7   6   4 
+>  Treearray:  [4] [2] [6] [1] [3] [5] [7]
+>  ---------------------------------------
+> 
 *** Comparing test5.out
-32a33
->  TO BE DONE 
-34c35,37
-<  TREE:        nodes:  3   height: 2 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-37,39c40,45
-<  preorder:   10   9  11 
-<  postorder:   9  11  10 
-<  Treearray:  [10] [9] [11]
----
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-42,47d47
-< 
-< 
-<      10    
-< 
-< 
-<    9    11    
+32a33,41
+>  ---------------------------------------
+>  TREE:        nodes:  3   height: 2 
+>  ---------------------------------------
+>  inorder:     9  10  11 
+>  preorder:   10   9  11 
+>  postorder:   9  11  10 
+>  Treearray:  [10] [9] [11]
+>  ---------------------------------------
+> 
 *** Comparing test6.out
-39a40
->  TO BE DONE 
-41a43
->  TO BE DONE 
-43c45,47
-<  TREE:        nodes:  4   height: 3 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-45,48c49,55
-<  inorder:    10  11  12  13 
-<  preorder:   10  12  11  13 
-<  postorder:  11  13  12  10 
-<  Treearray:  [10] [*] [12] [*] [*] [11] [13]
----
->  inorder:     9  10  11  12  13 
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-51,59d57
-< 
-< 
-<           10         
-< 
-< 
-<      *         12         
-< 
-< 
-<   *    *    11    13    
+41a42,50
+>  ---------------------------------------
+>  TREE:        nodes:  4   height: 3 
+>  ---------------------------------------
+>  inorder:    10  11  12  13 
+>  preorder:   10  12  11  13 
+>  postorder:  11  13  12  10 
+>  Treearray:  [10] [*] [12] [*] [*] [11] [13]
+>  ---------------------------------------
+> 
 *** Comparing test7.out
-32a33
->  TO BE DONE 
-34c35,37
-<  TREE:        nodes:  3   height: 2 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-37,39c40,45
-<  preorder:   10   9  11 
-<  postorder:   9  11  10 
-<  Treearray:  [10] [9] [11]
----
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-42,47d47
-< 
-< 
-<      10    
-< 
-< 
-<    9    11    
+32a33,41
+>  ---------------------------------------
+>  TREE:        nodes:  3   height: 2 
+>  ---------------------------------------
+>  inorder:     9  10  11 
+>  preorder:   10   9  11 
+>  postorder:   9  11  10 
+>  Treearray:  [10] [9] [11]
+>  ---------------------------------------
+> 
 *** Comparing test8.out
-32a33
->  TO BE DONE 
-34c35,37
-<  TREE:        nodes:  3   height: 2 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-37,39c40,45
-<  preorder:    8   7   9 
-<  postorder:   7   9   8 
-<  Treearray:  [8] [7] [9]
----
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-42,47d47
-< 
-< 
-<       8    
-< 
-< 
-<    7     9    
+32a33,41
+>  ---------------------------------------
+>  TREE:        nodes:  3   height: 2 
+>  ---------------------------------------
+>  inorder:     7   8   9 
+>  preorder:    8   7   9 
+>  postorder:   7   9   8 
+>  Treearray:  [8] [7] [9]
+>  ---------------------------------------
+> 
 *** Comparing test9.out
-45a46
->  TO BE DONE 
-47a49
->  TO BE DONE 
-49c51,53
-<  TREE:        nodes:  6   height: 4 
----
->  TO BE DONE 
->  TO BE DONE 
->  TREE:        nodes:  0   height: 0 
-51,54c55,61
-<  inorder:    30  38  40  45  50  55 
-<  preorder:   50  38  30  40  45  55 
-<  postorder:  30  45  40  38  55  50 
-<  Treearray:  [50] [38] [55] [30] [40] [*] [*] [*] [*] [*] [45] [*] [*] [*] [*]
----
->  inorder:    30  38  40  45  50  55  60 
->  preorder:  
->  TO BE DONE 
->  postorder: 
->  TO BE DONE 
->  Treearray: 
->  TO BE DONE 
-57,68d63
-< 
-< 
-<                     50                   
-< 
-< 
-<           38                   55                   
-< 
-< 
-<      30         40         *         *         
-< 
-< 
-<   *    *    *    45    *    *    *    *    
+47a48,56
+>  ---------------------------------------
+>  TREE:        nodes:  6   height: 4 
+>  ---------------------------------------
+>  inorder:    30  38  40  45  50  55 
+>  preorder:   50  38  30  40  45  55 
+>  postorder:  30  45  40  38  55  50 
+>  Treearray:  [50] [38] [55] [30] [40] [*] [*] [*] [*] [*] [45] [*] [*] [*] [*]
+>  ---------------------------------------
+> 
 *** cleaning up ...
 ...tests finished

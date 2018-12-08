@@ -1,0 +1,176 @@
+
+ *** Start of Tree program 
+***************************************************************
+***                                                         ***
+***   m:   display this menu                                ***
+***   t:   display the tree (2D)                            ***
+***                                                         ***
+***   a:   add a value to the tree                          ***
+***   r:   remove a value from the tree                     ***
+***   f:   find a value in the tree                         ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice =>  z 
+
+ Enter choice =>  + 
+
+ *** In Info Mode *** 
+ Enter choice =>  t 
+
+ *** Tree is empty 
+ Enter choice =>  a 
+ Enter a value:   5
+
+ Enter choice =>  t 
+
+
+
+   5 
+ ---------------------------------------
+ TREE:        nodes:  1   height: 1 
+ ---------------------------------------
+ inorder:     5 
+ preorder:    5 
+ postorer:   5 
+ Treearray:  [5]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   3
+
+ Enter choice =>  t 
+
+
+
+      5    
+
+
+   3    *    
+ ---------------------------------------
+ TREE:        nodes:  2   height: 2 
+ ---------------------------------------
+ inorder:     3   5 
+ preorder:    5   3 
+ postorer:   3   5 
+ Treearray:  [5] [3] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   7
+
+ Enter choice =>  t 
+
+
+
+      5    
+
+
+   3     7    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     3   5   7 
+ preorder:    5   3   7 
+ postorer:   3   7   5 
+ Treearray:  [5] [3] [7]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   1
+
+ Enter choice =>  t 
+
+
+
+           5         
+
+
+      3          7         
+
+
+   1    *    *    *    
+ ---------------------------------------
+ TREE:        nodes:  4   height: 3 
+ ---------------------------------------
+ inorder:     1   3   5   7 
+ preorder:    5   3   1   7 
+ postorer:   1   3   7   5 
+ Treearray:  [5] [3] [7] [1] [*] [*] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   4
+
+ Enter choice =>  t 
+
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4    *    *    
+ ---------------------------------------
+ TREE:        nodes:  5   height: 3 
+ ---------------------------------------
+ inorder:     1   3   4   5   7 
+ preorder:    5   3   1   4   7 
+ postorer:   1   4   3   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [*] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   6
+
+ Enter choice =>  t 
+
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6    *    
+ ---------------------------------------
+ TREE:        nodes:  6   height: 3 
+ ---------------------------------------
+ inorder:     1   3   4   5   6   7 
+ preorder:    5   3   1   4   7   6 
+ postorer:   1   4   3   6   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [*]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   8
+
+ Enter choice =>  t 
+
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6     8    
+ ---------------------------------------
+ TREE:        nodes:  7   height: 3 
+ ---------------------------------------
+ inorder:     1   3   4   5   6   7   8 
+ preorder:    5   3   1   4   7   6   8 
+ postorer:   1   4   3   6   8   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [8]
+ ---------------------------------------
+
+ Enter choice =>  q 
+ *** BYE BYE! ***
+ *** End of Tree program 

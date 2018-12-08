@@ -1,0 +1,105 @@
+
+ *** Start of Tree program 
+***************************************************************
+***                                                         ***
+***   m:   display this menu                                ***
+***   t:   display the tree (2D)                            ***
+***                                                         ***
+***   a:   add a value to the tree                          ***
+***   r:   remove a value from the tree                     ***
+***   f:   find a value in the tree                         ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice =>  z 
+
+ Enter choice =>  + 
+
+ *** In Info Mode *** 
+ Enter choice =>  t 
+
+ *** Tree is empty 
+ Enter choice =>  a 
+ Enter a value:   9
+
+ Enter choice =>  t 
+
+
+
+   9 
+ ---------------------------------------
+ TREE:        nodes:  1   height: 1 
+ ---------------------------------------
+ inorder:     9 
+ preorder:    9 
+ postorer:   9 
+ Treearray:  [9]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   10
+
+ Enter choice =>  t 
+
+
+
+      9    
+
+
+  *    10    
+ ---------------------------------------
+ TREE:        nodes:  2   height: 2 
+ ---------------------------------------
+ inorder:     9  10 
+ preorder:    9  10 
+ postorer:  10   9 
+ Treearray:  [9] [*] [10]
+ ---------------------------------------
+
+ Enter choice =>  a 
+ Enter a value:   11
+
+
+
+           9         
+
+
+     *         10         
+
+
+  *    *    *    11    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 3 
+ ---------------------------------------
+ inorder:     9  10  11 
+ preorder:    9  10  11 
+ postorer:  11  10   9 
+ Treearray:  [9] [*] [10] [*] [*] [*] [11]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  9                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+     10    
+
+
+   9    11    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     9  10  11 
+ preorder:   10   9  11 
+ postorer:   9  11  10 
+ Treearray:  [10] [9] [11]
+ ---------------------------------------
+
+ Enter choice =>  q 
+ *** BYE BYE! ***
+ *** End of Tree program 

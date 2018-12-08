@@ -30,21 +30,21 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 2 
  ---------------------------------------
  inorder:     9  10  11 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   10   9  11 
+ postorder:   9  11  10 
+ Treearray:  [10] [9] [11]
  ---------------------------------------
 
+
+
+     10    
+
+
+   9    11    
  Enter choice =>  q 
  *** BYE BYE! ***
  *** End of Tree program 

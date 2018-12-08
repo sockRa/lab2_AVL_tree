@@ -257,8 +257,8 @@ static treeref b_rem(treeref T, int v)
       // Case 1: no children
       if(is_empty(LC(T)) && is_empty(RC(T))){
         
-         if(dir == 'L')                set_LC(parent, NULLREF);
-         else if(dir =='R')            set_RC(parent,NULLREF);
+         if(dir == 'L')                cons(NULLREF,parent,RC(parent));
+         else if(dir =='R')            cons(LC(parent),parent,NULLREF); 
          else                          {T = NULLREF;   return T;}
       }
       //Case 2: one child // Glöm inte special case för root, för alla cases.
@@ -277,8 +277,11 @@ static treeref b_rem(treeref T, int v)
          if(dir == 'L'){ 
             
             if(get_value(parent) == get_value(root)){
-               set_LC(parent,RC(T));
-               set_LC(RC(T),LC(T));
+               cons(RC(T),parent,RC(parent));
+               cons(LC(T),RC(T),RC(RC(T)));
+               
+               // set_LC(parent,RC(T));
+               // set_LC(RC(T),LC(T));
             }
             else{
                cons(RC(T),parent,RC(parent));
@@ -288,8 +291,12 @@ static treeref b_rem(treeref T, int v)
          else if(dir == 'R'){
             
             if(get_value(parent) == get_value(root)){
-               set_RC(parent,LC(T));
-               set_RC(LC(T),RC(T));
+               
+               cons(LC(parent),parent,LC(T));
+               cons(LC(LC(T)), LC(T), RC(T));
+
+               // set_RC(parent,LC(T));
+               // set_RC(LC(T),RC(T));
             }
             else{
                cons(LC(parent),parent,RC(T));
@@ -316,7 +323,7 @@ static treeref b_rem(treeref T, int v)
                cons(LC(root),newRoot,RC(root));
             }
             else cons(LC(root),newRoot,RC(newRoot));
-               
+      
             return newRoot; 
          }                    
       }  
@@ -414,7 +421,7 @@ static void print_treeinfo() {
    printf("\n ---------------------------------------");
    printf("\n inorder:   "); b_disp_in(T);
    printf("\n preorder:  "); b_disp_pre(T);
-   printf("\n postorder: "); b_disp_post(T);
+   printf("\n postorer: "); b_disp_post(T);
    printf("\n Treearray: "); b_disp_array();
    printf("\n ---------------------------------------");
    printf("\n");
@@ -463,8 +470,6 @@ static void b_disp_2D()
       }
       
       T2Q(T,0);
-      // printf("\n TO BE DONE ");size
-      /* if (infomode) */  print_treeinfo();
 
       int height     = b_height(T);
       int maxSpace   = pow(2,height);
@@ -496,7 +501,8 @@ static void b_disp_2D()
             }
             if ( i != 0)   nodeSpace = nodeSpace >> 1;
       }
-
+      if (infomode) 
+      print_treeinfo();
    }
    else printf("\n *** Tree is empty ");
 }
