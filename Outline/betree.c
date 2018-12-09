@@ -201,7 +201,6 @@ static treeref balance(treeref T) {
    }     
    else  temp = T;
    
-
    return temp;
    }
 
@@ -211,7 +210,8 @@ static treeref balance(treeref T) {
 static treeref cons(treeref LC, treeref N, treeref RC) {
    set_LC(N, LC); 
    set_RC(N, RC); 
-   return balance(N);
+   if (!bstmode) return balance(N);
+   else return N;
    }
 
 /****************************************************************************/
@@ -238,7 +238,7 @@ static treeref b_rem(treeref T, int v)
       case 3: two children
    */
   char dir = 'S'; // dir L = left, dir R = right, dir S = special-case
-
+   
   treeref parent = T;
   treeref root = T;
 
@@ -279,9 +279,6 @@ static treeref b_rem(treeref T, int v)
             if(get_value(parent) == get_value(root)){
                cons(RC(T),parent,RC(parent));
                cons(LC(T),RC(T),RC(RC(T)));
-               
-               // set_LC(parent,RC(T));
-               // set_LC(RC(T),LC(T));
             }
             else{
                cons(RC(T),parent,RC(parent));
@@ -294,15 +291,11 @@ static treeref b_rem(treeref T, int v)
                
                cons(LC(parent),parent,LC(T));
                cons(LC(LC(T)), LC(T), RC(T));
-
-               // set_RC(parent,LC(T));
-               // set_RC(LC(T),RC(T));
             }
             else{
                cons(LC(parent),parent,RC(T));
                cons(LC(T),RC(T),RC(RC(T)));
             }
-            
          }    
          else{
               
@@ -322,8 +315,9 @@ static treeref b_rem(treeref T, int v)
                } 
                cons(LC(root),newRoot,RC(root));
             }
-            else cons(LC(root),newRoot,RC(newRoot));
-      
+            else  cons(LC(root),newRoot,RC(newRoot));
+               
+
             return newRoot; 
          }                    
       }  
