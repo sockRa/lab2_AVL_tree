@@ -142,13 +142,13 @@
 
 
 
-           8         
+           4         
 
 
-      3         *         
+      3          8         
 
 
-   1     4    *    *    
+   1    *    *    *    
  Enter choice =>  r 
  Enter a value:   4
 
@@ -156,13 +156,10 @@
 
 
 
-           8         
+      3    
 
 
-      3         *         
-
-
-   1    *    *    *    
+   1     8    
  Enter choice =>  r 
  Enter a value:   3
 
@@ -387,10 +384,13 @@
 
 
 
-     10    
+          12         
 
 
-  *    11    
+     10         13         
+
+
+  *    11    *    *    
  Enter choice =>  q 
  *** BYE BYE! ***
  *** End of Tree program 
@@ -525,16 +525,13 @@
 
 
 
-                    50                   
+          40         
 
 
-          38                   55                   
+     38         50         
 
 
-     30         40         *         *         
-
-
-  *    *    *    45    *    *    *    *    
+  30    *    45    55    
  Enter choice =>  q 
  *** BYE BYE! ***
  *** End of Tree program 

@@ -225,22 +225,6 @@ static treeref b_add(treeref T, int v)
     :                          T;
 }
 
-static treeref leafNode(treeref T){
-   T = NULLREF;
-   return T;
-}
-
-static treeref leftChild(treeref T){
-   treeref temp = get_LC(T);
-   T = NULLREF;
-   return temp;
-}
-
-static treeref rightChild(treeref T){
-   treeref temp = get_RC(T);
-   T = NULLREF;
-   return temp;
-}
 
 static treeref twoChildren(treeref T){
 
@@ -287,9 +271,9 @@ static treeref twoChildren(treeref T){
 
 static treeref removeNode(treeref T){
 
-   if(is_empty(get_LC(T)) && is_empty(get_RC(T)))        return leafNode(T);  
-   else if(is_empty(get_LC(T)))                          return rightChild(T);
-   else if(is_empty(get_RC(T)))                          return leftChild(T);
+   if(is_empty(get_LC(T)) && is_empty(get_RC(T)))        T = NULLREF;  
+   else if(is_empty(get_LC(T)))                          T = RC(T);
+   else if(is_empty(get_RC(T)))                          T = LC(T);
    else if(!is_empty(get_RC(T)) && !is_empty(get_LC(T))) return twoChildren(T);
 
    return(T);

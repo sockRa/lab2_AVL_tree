@@ -1,0 +1,26 @@
+*** tests starting
+*** compiling modules: frontend
+*** compiling modules: backend
+*** Build and Test: saving previous output
+*** Build and Test: compiling system
+*** Build and Test: running test1
+*** Build and Test: running test2
+*** Build and Test: running test3
+*** Build and Test: running test4
+*** Build and Test: running test5
+*** Build and Test: running test6
+*** Build and Test: running test7
+*** Build and Test: running test8
+*** Build and Test: running test9
+*** Build and Test: comparing outputs (diff)
+*** Comparing test1.out
+*** Comparing test2.out
+*** Comparing test3.out
+*** Comparing test4.out
+*** Comparing test5.out
+*** Comparing test6.out
+*** Comparing test7.out
+*** Comparing test8.out
+*** Comparing test9.out
+*** cleaning up ...
+...tests finished

@@ -86,10 +86,13 @@
 
 
 
-      8    
+           4         
 
 
-   4    *    
+      3          8         
+
+
+   1    *    *    *    
  Enter choice =>  r 
  Enter a value:   4
 
@@ -97,7 +100,10 @@
 
 
 
-   8 
+      3    
+
+
+   1     8    
  Enter choice =>  r 
  Enter a value:   3
 
@@ -105,13 +111,18 @@
 
 
 
-   8 
+      8    
+
+
+   1    *    
  Enter choice =>  r 
  Enter a value:   8
 
  Enter choice =>  t 
 
- *** Tree is empty 
+
+
+   1 
  Enter choice =>  r 
  Enter a value:   1
 
