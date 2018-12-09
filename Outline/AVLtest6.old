@@ -37,24 +37,17 @@
  Enter choice =>  r 
  Enter a value:   9
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
- ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
- ---------------------------------------
- inorder:     9  10  11  12  13 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
- ---------------------------------------
 
+
+          12         
+
+
+     10         13         
+
+
+  *    11    *    *    
  Enter choice =>  q 
  *** BYE BYE! ***
  *** End of Tree program 

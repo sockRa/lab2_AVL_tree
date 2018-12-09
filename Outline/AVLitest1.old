@@ -27,19 +27,16 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+   5 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
  inorder:     5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5 
+ postorer:   5 
+ Treearray:  [5]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -47,19 +44,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      5    
+
+
+   3    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     3   5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3 
+ postorer:   3   5 
+ Treearray:  [5] [3] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -67,19 +64,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      5    
+
+
+   3     7    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 2 
  ---------------------------------------
  inorder:     3   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   7 
+ postorer:   3   7   5 
+ Treearray:  [5] [3] [7]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -87,19 +84,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:     1   3   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   7 
+ postorer:   1   3   7   5 
+ Treearray:  [5] [3] [7] [1] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -107,19 +107,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7 
+ postorer:   1   4   3   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -127,19 +130,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7   6 
+ postorer:   1   4   3   6   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -147,19 +153,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6     8    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  7   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7   6   8 
+ postorer:   1   4   3   6   8   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [8]
  ---------------------------------------
 
  Enter choice =>  q 

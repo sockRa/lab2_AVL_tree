@@ -27,19 +27,16 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+   5 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
  inorder:     5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5 
+ postorer:   5 
+ Treearray:  [5]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -47,19 +44,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      5    
+
+
+   3    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     3   5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3 
+ postorer:   3   5 
+ Treearray:  [5] [3] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -67,19 +64,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      5    
+
+
+   3     7    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 2 
  ---------------------------------------
  inorder:     3   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   7 
+ postorer:   3   7   5 
+ Treearray:  [5] [3] [7]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -87,19 +84,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:     1   3   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   7 
+ postorer:   1   3   7   5 
+ Treearray:  [5] [3] [7] [1] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -107,19 +107,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7 
+ postorer:   1   4   3   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -127,19 +130,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7   6 
+ postorer:   1   4   3   6   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -147,19 +153,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6     8    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  7   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7   6   8 
+ postorer:   1   4   3   6   8   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [8]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -194,19 +203,16 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+   5 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
  inorder:     5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5 
+ postorer:   5 
+ Treearray:  [5]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -214,19 +220,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      5    
+
+
+   3    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     3   5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3 
+ postorer:   3   5 
+ Treearray:  [5] [3] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -234,19 +240,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      5    
+
+
+   3     7    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 2 
  ---------------------------------------
  inorder:     3   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   7 
+ postorer:   3   7   5 
+ Treearray:  [5] [3] [7]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -254,19 +260,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:     1   3   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   7 
+ postorer:   1   3   7   5 
+ Treearray:  [5] [3] [7] [1] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -274,19 +283,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7 
+ postorer:   1   4   3   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -294,19 +306,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7   6 
+ postorer:   1   4   3   6   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -314,168 +329,160 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           5         
+
+
+      3          7         
+
+
+   1     4     6     8    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  7   height: 3 
  ---------------------------------------
  inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    5   3   1   4   7   6   8 
+ postorer:   1   4   3   6   8   7   5 
+ Treearray:  [5] [3] [7] [1] [4] [6] [8]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   5
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           6         
+
+
+      3          7         
+
+
+   1     4    *     8    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 3 
  ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:     1   3   4   6   7   8 
+ preorder:    6   3   1   4   7   8 
+ postorer:   1   4   3   8   7   6 
+ Treearray:  [6] [3] [7] [1] [4] [*] [8]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   6
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           7         
+
+
+      3          8         
+
+
+   1     4    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 3 
  ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:     1   3   4   7   8 
+ preorder:    7   3   1   4   8 
+ postorer:   1   4   3   8   7 
+ Treearray:  [7] [3] [8] [1] [4] [*] [*]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   7
 
- TO BE DONE 
+
+
+                     7                   
+
+
+           3                    8                   
+
+
+      1          4          3         *         
+
+
+  *    *    *    *     1     4    *    *    
+ ---------------------------------------
+ TREE:        nodes:  8   height: 4 
+ ---------------------------------------
+ inorder:     1   3   4   7   1   3   4   8 
+ preorder:    7   3   1   4   8   3   1   4 
+ postorer:   1   4   3   1   4   3   8   7 
+ Treearray:  [7] [3] [8] [1] [4] [3] [*] [*] [*] [*] [*] [1] [4] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  8                  *** 
+ *************************************** 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      8    
+
+
+   4    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:     4   8 
+ preorder:    8   4 
+ postorer:   4   8 
+ Treearray:  [8] [4] [*]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   4
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+   8 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:     8 
+ preorder:    8 
+ postorer:   8 
+ Treearray:  [8]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   3
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+   8 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:     8 
+ preorder:    8 
+ postorer:   8 
+ Treearray:  [8]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   8
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
- ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
- ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
- ---------------------------------------
-
+ *** Tree is empty 
  Enter choice =>  r 
  Enter a value:   1
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
- ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
- ---------------------------------------
- inorder:     1   3   4   5   6   7   8 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
- ---------------------------------------
-
+ *** Tree is empty 
  Enter choice =>  q 
  *** BYE BYE! ***
  *** End of Tree program 
@@ -511,39 +518,60 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      1    
+
+
+  *     2    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     1   2 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    1   2 
+ postorer:   2   1 
+ Treearray:  [1] [*] [2]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   3
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+           1         
+
+
+     *          2         
+
+
+  *    *    *     3    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 3 
  ---------------------------------------
  inorder:     1   2   3 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    1   2   3 
+ postorer:   3   2   1 
+ Treearray:  [1] [*] [2] [*] [*] [*] [3]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  1                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+      2    
+
+
+   1     3    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     1   2   3 
+ preorder:    2   1   3 
+ postorer:   1   3   2 
+ Treearray:  [2] [1] [3]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -551,79 +579,163 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           2         
+
+
+      1          3         
+
+
+  *    *    *     4    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:     1   2   3   4 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    2   1   3   4 
+ postorer:   1   4   3   2 
+ Treearray:  [2] [1] [3] [*] [*] [*] [4]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   5
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+                     2                   
+
+
+           1                    3                   
+
+
+     *         *         *          4         
+
+
+  *    *    *    *    *    *    *     5    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 4 
  ---------------------------------------
  inorder:     1   2   3   4   5 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    2   1   3   4   5 
+ postorer:   1   5   4   3   2 
+ Treearray:  [2] [1] [3] [*] [*] [*] [4] [*] [*] [*] [*] [*] [*] [*] [5]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  3                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+           2         
+
+
+      1          4         
+
+
+  *    *     3     5    
+ ---------------------------------------
+ TREE:        nodes:  5   height: 3 
+ ---------------------------------------
+ inorder:     1   2   3   4   5 
+ preorder:    2   1   4   3   5 
+ postorer:   1   3   5   4   2 
+ Treearray:  [2] [1] [4] [*] [*] [3] [5]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   6
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+                     2                   
+
+
+           1                    4                   
+
+
+     *         *          3          5         
+
+
+  *    *    *    *    *    *    *     6    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 4 
  ---------------------------------------
  inorder:     1   2   3   4   5   6 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    2   1   4   3   5   6 
+ postorer:   1   3   6   5   4   2 
+ Treearray:  [2] [1] [4] [*] [*] [3] [5] [*] [*] [*] [*] [*] [*] [*] [6]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  2                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+           4         
+
+
+      2          5         
+
+
+   1     3    *     6    
+ ---------------------------------------
+ TREE:        nodes:  6   height: 3 
+ ---------------------------------------
+ inorder:     1   2   3   4   5   6 
+ preorder:    4   2   1   3   5   6 
+ postorer:   1   3   2   6   5   4 
+ Treearray:  [4] [2] [5] [1] [3] [*] [6]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   7
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+                     4                   
+
+
+           2                    5                   
+
+
+      1          3         *          6         
+
+
+  *    *    *    *    *    *    *     7    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  7   height: 4 
  ---------------------------------------
  inorder:     1   2   3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    4   2   1   3   5   6   7 
+ postorer:   1   3   2   7   6   5   4 
+ Treearray:  [4] [2] [5] [1] [3] [*] [6] [*] [*] [*] [*] [*] [*] [*] [7]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  5                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+           4         
+
+
+      2          6         
+
+
+   1     3     5     7    
+ ---------------------------------------
+ TREE:        nodes:  7   height: 3 
+ ---------------------------------------
+ inorder:     1   2   3   4   5   6   7 
+ preorder:    4   2   1   3   6   5   7 
+ postorer:   1   3   2   5   7   6   4 
+ Treearray:  [4] [2] [6] [1] [3] [5] [7]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -661,39 +773,60 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      7    
+
+
+   6    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    7   6 
+ postorer:   6   7 
+ Treearray:  [7] [6] [*]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   5
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+           7         
+
+
+      6         *         
+
+
+   5    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 3 
  ---------------------------------------
  inorder:     5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    7   6   5 
+ postorer:   5   6   7 
+ Treearray:  [7] [6] [*] [5] [*] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  7                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+      6    
+
+
+   5     7    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     5   6   7 
+ preorder:    6   5   7 
+ postorer:   5   7   6 
+ Treearray:  [6] [5] [7]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -701,79 +834,163 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+           6         
+
+
+      5          7         
+
+
+   4    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:     4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    6   5   4   7 
+ postorer:   4   5   7   6 
+ Treearray:  [6] [5] [7] [4] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   3
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+                     6                   
+
+
+           5                    7                   
+
+
+      4         *         *         *         
+
+
+   3    *    *    *    *    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 4 
  ---------------------------------------
  inorder:     3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    6   5   4   3   7 
+ postorer:   3   4   5   7   6 
+ Treearray:  [6] [5] [7] [4] [*] [*] [*] [3] [*] [*] [*] [*] [*] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  5                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+           6         
+
+
+      4          7         
+
+
+   3     5    *    *    
+ ---------------------------------------
+ TREE:        nodes:  5   height: 3 
+ ---------------------------------------
+ inorder:     3   4   5   6   7 
+ preorder:    6   4   3   5   7 
+ postorer:   3   5   4   7   6 
+ Treearray:  [6] [4] [7] [3] [5] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   2
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+                     6                   
+
+
+           4                    7                   
+
+
+      3          5         *         *         
+
+
+   2    *    *    *    *    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 4 
  ---------------------------------------
  inorder:     2   3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    6   4   3   2   5   7 
+ postorer:   2   3   5   4   7   6 
+ Treearray:  [6] [4] [7] [3] [5] [*] [*] [2] [*] [*] [*] [*] [*] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  6                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+           4         
+
+
+      3          6         
+
+
+   2    *     5     7    
+ ---------------------------------------
+ TREE:        nodes:  6   height: 3 
+ ---------------------------------------
+ inorder:     2   3   4   5   6   7 
+ preorder:    4   3   2   6   5   7 
+ postorer:   2   3   5   7   6   4 
+ Treearray:  [4] [3] [6] [2] [*] [5] [7]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   1
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+                     4                   
+
+
+           3                    6                   
+
+
+      2         *          5          7         
+
+
+   1    *    *    *    *    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  7   height: 4 
  ---------------------------------------
  inorder:     1   2   3   4   5   6   7 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    4   3   2   1   6   5   7 
+ postorer:   1   2   3   5   7   6   4 
+ Treearray:  [4] [3] [6] [2] [*] [5] [7] [1] [*] [*] [*] [*] [*] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  3                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+           4         
+
+
+      2          6         
+
+
+   1     3     5     7    
+ ---------------------------------------
+ TREE:        nodes:  7   height: 3 
+ ---------------------------------------
+ inorder:     1   2   3   4   5   6   7 
+ preorder:    4   2   1   3   6   5   7 
+ postorer:   1   3   2   5   7   6   4 
+ Treearray:  [4] [2] [6] [1] [3] [5] [7]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -808,19 +1025,16 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+   9 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
  inorder:     9 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9 
+ postorer:   9 
+ Treearray:  [9]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -828,39 +1042,60 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      9    
+
+
+  *    10    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     9  10 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9  10 
+ postorer:  10   9 
+ Treearray:  [9] [*] [10]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   11
 
- Enter choice =>  t 
 
- TO BE DONE 
+
+           9         
+
+
+     *         10         
+
+
+  *    *    *    11    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 3 
  ---------------------------------------
  inorder:     9  10  11 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9  10  11 
+ postorer:  11  10   9 
+ Treearray:  [9] [*] [10] [*] [*] [*] [11]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  9                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+     10    
+
+
+   9    11    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     9  10  11 
+ preorder:   10   9  11 
+ postorer:   9  11  10 
+ Treearray:  [10] [9] [11]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -895,19 +1130,16 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+  10 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
  inorder:    10 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   10 
+ postorer:  10 
+ Treearray:  [10]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -915,19 +1147,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+     10    
+
+
+   9    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     9  10 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   10   9 
+ postorer:   9  10 
+ Treearray:  [10] [9] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -935,19 +1167,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+     10    
+
+
+   9    12    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 2 
  ---------------------------------------
  inorder:     9  10  12 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   10   9  12 
+ postorer:   9  12  10 
+ Treearray:  [10] [9] [12]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -955,19 +1187,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+          10         
+
+
+      9         12         
+
+
+  *    *    11    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:     9  10  11  12 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   10   9  12  11 
+ postorer:   9  11  12  10 
+ Treearray:  [10] [9] [12] [*] [*] [11] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -975,40 +1210,63 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+          10         
+
+
+      9         12         
+
+
+  *    *    11    13    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 3 
  ---------------------------------------
  inorder:     9  10  11  12  13 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   10   9  12  11  13 
+ postorer:   9  11  13  12  10 
+ Treearray:  [10] [9] [12] [*] [*] [11] [13]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   9
 
- TO BE DONE 
+
+
+          10         
+
+
+     *         12         
+
+
+  *    *    11    13    
+ ---------------------------------------
+ TREE:        nodes:  4   height: 3 
+ ---------------------------------------
+ inorder:    10  11  12  13 
+ preorder:   10  12  11  13 
+ postorer:  11  13  12  10 
+ Treearray:  [10] [*] [12] [*] [*] [11] [13]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node 10                  *** 
+ *************************************** 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+     10    
+
+
+  *    11    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
- inorder:     9  10  11  12  13 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:    10  11 
+ preorder:   10  11 
+ postorer:  11  10 
+ Treearray:  [10] [*] [11]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -1046,39 +1304,87 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      9    
+
+
+  *    11    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     9  11 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9  11 
+ postorer:  11   9 
+ Treearray:  [9] [*] [11]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   10
 
- Enter choice =>  t 
+ *************************************** 
+ *** DLR(T) is SRR(RC(T)) + SLR(T)   *** 
+ *************************************** 
+ *** DLR at node  9 is               *** 
+ *** SRR at node 11 + SLR at node  9 *** 
+ *************************************** 
 
- TO BE DONE 
+
+           9         
+
+
+     *         11         
+
+
+  *    *    10    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 3 
  ---------------------------------------
  inorder:     9  10  11 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9  11  10 
+ postorer:  10  11   9 
+ Treearray:  [9] [*] [11] [*] [*] [10] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node 11                  *** 
+ *************************************** 
+
+
+           9         
+
+
+     *         10         
+
+
+  *    *    *    11    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 3 
+ ---------------------------------------
+ inorder:     9  10  11 
+ preorder:    9  10  11 
+ postorer:  11  10   9 
+ Treearray:  [9] [*] [10] [*] [*] [*] [11]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  9                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+     10    
+
+
+   9    11    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     9  10  11 
+ preorder:   10   9  11 
+ postorer:   9  11  10 
+ Treearray:  [10] [9] [11]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -1116,39 +1422,87 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+      9    
+
+
+   7    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:     7   9 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9   7 
+ postorer:   7   9 
+ Treearray:  [9] [7] [*]
  ---------------------------------------
 
  Enter choice =>  a 
  Enter a value:   8
 
- Enter choice =>  t 
+ *************************************** 
+ *** DRR(T) is SLR(LC(T)) + SRR(T)   *** 
+ *************************************** 
+ *** DRR at node  9 is               *** 
+ *** SLR at node  7 + SRR at node  9 *** 
+ *************************************** 
 
- TO BE DONE 
+
+           9         
+
+
+      7         *         
+
+
+  *     8    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 3 
  ---------------------------------------
  inorder:     7   8   9 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:    9   7   8 
+ postorer:   8   7   9 
+ Treearray:  [9] [7] [*] [*] [8] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SLR at node  7                  *** 
+ *************************************** 
+
+
+           9         
+
+
+      8         *         
+
+
+   7    *    *    *    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 3 
+ ---------------------------------------
+ inorder:     7   8   9 
+ preorder:    9   8   7 
+ postorer:   7   8   9 
+ Treearray:  [9] [8] [*] [7] [*] [*] [*]
+ ---------------------------------------
+
+ *************************************** 
+ *** SRR at node  9                  *** 
+ *************************************** 
+ Enter choice =>  t 
+
+
+
+      8    
+
+
+   7     9    
+ ---------------------------------------
+ TREE:        nodes:  3   height: 2 
+ ---------------------------------------
+ inorder:     7   8   9 
+ preorder:    8   7   9 
+ postorer:   7   9   8 
+ Treearray:  [8] [7] [9]
  ---------------------------------------
 
  Enter choice =>  q 
@@ -1183,19 +1537,16 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+  50 
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  1   height: 1 
  ---------------------------------------
  inorder:    50 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50 
+ postorer:  50 
+ Treearray:  [50]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -1203,19 +1554,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+     50    
+
+
+  38    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  2   height: 2 
  ---------------------------------------
  inorder:    38  50 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50  38 
+ postorer:  38  50 
+ Treearray:  [50] [38] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -1223,19 +1574,19 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+     50    
+
+
+  38    55    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  3   height: 2 
  ---------------------------------------
  inorder:    38  50  55 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50  38  55 
+ postorer:  38  55  50 
+ Treearray:  [50] [38] [55]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -1243,19 +1594,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+          50         
+
+
+     38         55         
+
+
+  30    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  4   height: 3 
  ---------------------------------------
  inorder:    30  38  50  55 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50  38  30  55 
+ postorer:  30  38  55  50 
+ Treearray:  [50] [38] [55] [30] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -1263,19 +1617,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+          50         
+
+
+     38         55         
+
+
+  30    40    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  5   height: 3 
  ---------------------------------------
  inorder:    30  38  40  50  55 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50  38  30  40  55 
+ postorer:  30  40  38  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [*]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -1283,19 +1640,22 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+          50         
+
+
+     38         55         
+
+
+  30    40    *    60    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 3 
  ---------------------------------------
  inorder:    30  38  40  50  55  60 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50  38  30  40  55  60 
+ postorer:  30  40  38  60  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [60]
  ---------------------------------------
 
  Enter choice =>  a 
@@ -1303,40 +1663,51 @@
 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+                    50                   
+
+
+          38                   55                   
+
+
+     30         40         *         60         
+
+
+  *    *    *    45    *    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  7   height: 4 
  ---------------------------------------
  inorder:    30  38  40  45  50  55  60 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ preorder:   50  38  30  40  45  55  60 
+ postorer:  30  45  40  38  60  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [60] [*] [*] [*] [45] [*] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  r 
  Enter a value:   60
 
- TO BE DONE 
  Enter choice =>  t 
 
- TO BE DONE 
+
+
+                    50                   
+
+
+          38                   55                   
+
+
+     30         40         *         *         
+
+
+  *    *    *    45    *    *    *    *    
  ---------------------------------------
- TO BE DONE 
- TO BE DONE 
- TREE:        nodes:  0   height: 0 
+ TREE:        nodes:  6   height: 4 
  ---------------------------------------
- inorder:    30  38  40  45  50  55  60 
- preorder:  
- TO BE DONE 
- postorder: 
- TO BE DONE 
- Treearray: 
- TO BE DONE 
+ inorder:    30  38  40  45  50  55 
+ preorder:   50  38  30  40  45  55 
+ postorer:  30  45  40  38  55  50 
+ Treearray:  [50] [38] [55] [30] [40] [*] [*] [*] [*] [*] [45] [*] [*] [*] [*]
  ---------------------------------------
 
  Enter choice =>  q 
