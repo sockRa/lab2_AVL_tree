@@ -225,6 +225,76 @@ static treeref b_add(treeref T, int v)
     :                          T;
 }
 
+static treeref leafNode(treeref T){
+   T = NULLREF;
+   return T;
+}
+
+static treeref leftChild(treeref T){
+   treeref temp = get_LC(T);
+   T = NULLREF;
+   return temp;
+}
+
+static treeref rightChild(treeref T){
+   treeref temp = get_RC(T);
+   T = NULLREF;
+   return temp;
+}
+
+static treeref twoChildren(treeref T){
+
+   treeref temp;
+
+   if(HDiff(T) <= 0){
+      treeref current = get_RC(T);
+      treeref root = T;
+
+      while(1){
+         if(is_empty(get_LC(current))){
+            if(current == get_LC(root))      set_LC(root,get_RC(current));
+            else if(current == get_RC(root)) set_RC(root,get_RC(current));
+
+            cons(get_LC(T),current,get_RC(T));
+
+            temp = current;
+            break;
+         }
+         root = current;
+         current = get_LC(current);
+      }
+   }else{
+      treeref current = get_LC(T);
+      treeref root = T;
+
+      while(1){
+         if(is_empty(get_RC(current))){
+            if(current == get_RC(root))      set_RC(root,get_LC(current));
+            else if(current == get_LC(root)) set_LC(root,get_LC(current));
+
+            cons(get_LC(T),current,get_RC(T));
+
+            temp = current;
+            break;
+         }
+         root = current;
+         current = get_RC(current);
+      }
+   }
+   T = NULLREF;
+   return temp;
+}
+
+static treeref removeNode(treeref T){
+
+   if(is_empty(get_LC(T)) && is_empty(get_RC(T)))        return leafNode(T);  
+   else if(is_empty(get_LC(T)))                          return rightChild(T);
+   else if(is_empty(get_RC(T)))                          return leftChild(T);
+   else if(!is_empty(get_RC(T)) && !is_empty(get_LC(T))) return twoChildren(T);
+
+   return(T);
+}
+
 /****************************************************************************/
 /* REMove an element from the tree / BST order                              */
 /****************************************************************************/
@@ -232,97 +302,11 @@ static treeref b_rem(treeref T, int v);
 
 static treeref b_rem(treeref T, int v)
 {  
-
-   /* case 1: no child
-      case 2: one child
-      case 3: two children
-   */
-  char dir = 'S'; // dir L = left, dir R = right, dir S = special-case
-   
-  treeref parent = T;
-  treeref root = T;
-
-   /* find the node, returns if value can't be found. */
-   while(1)
-   {
-      if       (is_empty(T))        return root; 
-      if       (v == get_value(T))  break;
-      parent = T;
-      if       (v < get_value(T))   {T = LC(T); dir = 'L';}
-      else if  (v > get_value(T))   {T = RC(T); dir = 'R';}
-   };
-
-   //When the given node is found
-   
-      // Case 1: no children
-      if(is_empty(LC(T)) && is_empty(RC(T))){
-        
-         if(dir == 'L')                cons(NULLREF,parent,RC(parent));
-         else if(dir =='R')            cons(LC(parent),parent,NULLREF); 
-         else                          {T = NULLREF;   return T;}
-      }
-      //Case 2: one child // Glöm inte special case för root, för alla cases.
-      else if(is_empty(LC(T))){
-         if(dir == 'L')                cons(RC(T),parent,RC(parent));
-         else if(dir == 'R')           cons(LC(parent),parent,RC(T));
-         else                          root = RC(T); 
-      }
-       else if(is_empty(RC(T))){
-         if(dir == 'L')                cons(LC(T),parent,RC(parent));
-         else if(dir == 'R')           cons(LC(parent),parent,LC(T));
-         else                          root = LC(T);
-      }
-      //Case 3: two children
-      else{
-         if(dir == 'L'){ 
-            
-            if(get_value(parent) == get_value(root)){
-               cons(RC(T),parent,RC(parent));
-               cons(LC(T),RC(T),RC(RC(T)));
-            }
-            else{
-               cons(RC(T),parent,RC(parent));
-               cons(LC(T),RC(T),RC(RC(T)));
-            }
-         }         
-         else if(dir == 'R'){
-            
-            if(get_value(parent) == get_value(root)){
-               
-               cons(LC(parent),parent,LC(T));
-               cons(LC(LC(T)), LC(T), RC(T));
-            }
-            else{
-               cons(LC(parent),parent,RC(T));
-               cons(LC(T),RC(T),RC(RC(T)));
-            }
-         }    
-         else{
-              
-               parent = root;
-               treeref newRoot = RC(root);
-
-            if(!is_empty(LC(newRoot))){
-               
-               while(!is_empty(LC(newRoot))){
-                  parent = newRoot;
-                  newRoot = LC(newRoot);
-               }
-               set_LC(parent,NULLREF);
-
-               if(!is_empty(RC(newRoot))){
-                  cons(RC(newRoot),parent,RC(parent));
-               } 
-               cons(LC(root),newRoot,RC(root));
-            }
-            else  cons(LC(root),newRoot,RC(newRoot));
-               
-
-            return newRoot; 
-         }                    
-      }  
-   
-   return root;
+   if(is_empty(T))               return NULLREF;
+   else if(get_value(T) == v )   return removeNode(T);
+   else if(get_value(T) > v)     return cons(b_rem(get_LC(T), v), T, get_RC(T));
+   else                          return cons(LC(T), node(T), b_rem(RC(T), v));
+  
 }
 
 /****************************************************************************/
