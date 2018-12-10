@@ -151,7 +151,6 @@ static void p_DRR(treeref T) {
 
 static treeref SLR(treeref T) {
   p_SLR(T);
-  
   treeref temp = get_RC(T);
   set_RC(T,get_LC(temp));
   set_LC(temp,T);
@@ -160,7 +159,6 @@ static treeref SLR(treeref T) {
 
 static treeref SRR(treeref T) {
   p_SRR(T);
-
   treeref temp = get_LC(T);
   set_LC(T,get_RC(temp));
   set_RC(temp,T);
@@ -169,14 +167,12 @@ static treeref SRR(treeref T) {
 
 static treeref DLR(treeref T) { 
    p_DLR(T);
-
    set_RC(T, SRR(get_RC(T)));
    return SLR(T);
 }
 
 static treeref DRR(treeref T) {
    p_DRR(T);
-
    set_LC(T, SLR(LC(T)));
    return SRR(T);
 }
@@ -190,15 +186,10 @@ static int HDiff(treeref T) { return (b_height(LC(T)) - b_height(RC(T)));}
 static treeref balance(treeref T) {
    treeref temp = NULLREF;
    
-   if(HDiff(T) > 1){
-      if(HDiff(get_LC(T)) < 0)   temp = DRR(T);
-         else                    temp = SRR(T);         
-   }
+   if(HDiff(T) > 1)        temp = (HDiff(LC(T)) < 0   ?  DRR(T)   :  SRR(T));
 
-   else if(HDiff(T) < -1){
-      if(HDiff(get_RC(T)) > 0)   temp = DLR(T);
-        else                     temp = SLR(T);
-   }     
+   else if(HDiff(T) < -1)  temp = (HDiff(RC(T)) > 0   ?  DLR(T)   :  SLR(T));
+ 
    else  temp = T;
    
    return temp;
@@ -404,8 +395,8 @@ static void T2Q(treeref T, int qpos) {
       treearray[qpos] = T;
 
       if(b_height(T) > 1){
-         T2Q(LC(T), qpos * 2 + 1);
-         T2Q(RC(T), qpos * 2 + 2);
+         T2Q(LC(T), (qpos << 1) + 1);
+         T2Q(RC(T), (qpos << 1) + 2);
       }
 }
 
@@ -435,7 +426,7 @@ static void b_disp_2D()
 
       int height     = b_height(T);
       int maxSpace   = pow(2,height);
-      maxSpace += maxSpace >> 2;
+      maxSpace       += maxSpace >> 1;
       int indent     = maxSpace;
       int count = 0;
       int nodeSpace = maxSpace - 1;
@@ -447,14 +438,15 @@ static void b_disp_2D()
          
 
          // Indent outside left tree
-         for(a = 0;   a < indent; a++)  printf(" ");
+         for(a = 0;  a < indent; a++)  printf(" ");
 
          indent = indent >> 1;  
          
-            for(a = 0;a<nodesPerLevel;a++){
+            for(a = 0;  a<nodesPerLevel;  a++){
 
                treearray[count] == NULLREF ? printf("*")
                :  printf("%2d",get_value(treearray[count]));
+
                int e = 0;
 
                for(e = 0; e < nodeSpace;e++)  printf(" ");

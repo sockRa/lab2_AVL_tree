@@ -14,13 +14,559 @@
 *** Build and Test: running test9
 *** Build and Test: comparing outputs (diff)
 *** Comparing test1.out
+0a1,56
+> 
+>  *** Start of Tree program 
+> ***************************************************************
+> ***                                                         ***
+> ***   m:   display this menu                                ***
+> ***   t:   display the tree (2D)                            ***
+> ***                                                         ***
+> ***   a:   add a value to the tree                          ***
+> ***   r:   remove a value from the tree                     ***
+> ***   f:   find a value in the tree                         ***
+> ***                                                         ***
+> ***   q:   quit the program                                 ***
+> ***                                                         ***
+> ***************************************************************
+> 
+> 
+>  Enter choice =>  z 
+> 
+>  Enter choice =>  t 
+> 
+>  *** Tree is empty 
+>  Enter choice =>  a 
+>  Enter a value:   5
+> 
+>  Enter choice =>  a 
+>  Enter a value:   3
+> 
+>  Enter choice =>  a 
+>  Enter a value:   7
+> 
+>  Enter choice =>  a 
+>  Enter a value:   1
+> 
+>  Enter choice =>  a 
+>  Enter a value:   4
+> 
+>  Enter choice =>  a 
+>  Enter a value:   6
+> 
+>  Enter choice =>  a 
+>  Enter a value:   8
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>              5           
+> 
+> 
+>        3            7           
+> 
+> 
+>     1      4      6      8     
+>  Enter choice =>  q 
+>  *** BYE BYE! ***
+>  *** End of Tree program 
 *** Comparing test2.out
+0a1,134
+> 
+>  *** Start of Tree program 
+> ***************************************************************
+> ***                                                         ***
+> ***   m:   display this menu                                ***
+> ***   t:   display the tree (2D)                            ***
+> ***                                                         ***
+> ***   a:   add a value to the tree                          ***
+> ***   r:   remove a value from the tree                     ***
+> ***   f:   find a value in the tree                         ***
+> ***                                                         ***
+> ***   q:   quit the program                                 ***
+> ***                                                         ***
+> ***************************************************************
+> 
+> 
+>  Enter choice =>  z 
+> 
+>  Enter choice =>  t 
+> 
+>  *** Tree is empty 
+>  Enter choice =>  a 
+>  Enter a value:   5
+> 
+>  Enter choice =>  a 
+>  Enter a value:   3
+> 
+>  Enter choice =>  a 
+>  Enter a value:   7
+> 
+>  Enter choice =>  a 
+>  Enter a value:   1
+> 
+>  Enter choice =>  a 
+>  Enter a value:   4
+> 
+>  Enter choice =>  a 
+>  Enter a value:   6
+> 
+>  Enter choice =>  a 
+>  Enter a value:   8
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>              5           
+> 
+> 
+>        3            7           
+> 
+> 
+>     1      4      6      8     
+>  Enter choice =>  r 
+>  Enter a value:   5
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>              6           
+> 
+> 
+>        3            7           
+> 
+> 
+>     1      4     *      8     
+>  Enter choice =>  r 
+>  Enter a value:   6
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>              7           
+> 
+> 
+>        3            8           
+> 
+> 
+>     1      4     *     *     
+>  Enter choice =>  r 
+>  Enter a value:   7
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>              4           
+> 
+> 
+>        3            8           
+> 
+> 
+>     1     *     *     *     
+>  Enter choice =>  r 
+>  Enter a value:   4
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>        3     
+> 
+> 
+>     1      8     
+>  Enter choice =>  r 
+>  Enter a value:   3
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>        8     
+> 
+> 
+>     1     *     
+>  Enter choice =>  r 
+>  Enter a value:   8
+> 
+>  Enter choice =>  t 
+> 
+> 
+> 
+>     1  
+>  Enter choice =>  r 
+>  Enter a value:   1
+> 
+>  Enter choice =>  t 
+> 
+>  *** Tree is empty 
+>  Enter choice =>  q 
+>  *** BYE BYE! ***
+>  *** End of Tree program 
 *** Comparing test3.out
+1,56d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   1
+< 
+<  Enter choice =>  a 
+<  Enter a value:   2
+< 
+<  Enter choice =>  a 
+<  Enter a value:   3
+< 
+<  Enter choice =>  a 
+<  Enter a value:   4
+< 
+<  Enter choice =>  a 
+<  Enter a value:   5
+< 
+<  Enter choice =>  a 
+<  Enter a value:   6
+< 
+<  Enter choice =>  a 
+<  Enter a value:   7
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<              4           
+< 
+< 
+<        2            6           
+< 
+< 
+<     1      3      5      7     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** Comparing test4.out
+1,56d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   7
+< 
+<  Enter choice =>  a 
+<  Enter a value:   6
+< 
+<  Enter choice =>  a 
+<  Enter a value:   5
+< 
+<  Enter choice =>  a 
+<  Enter a value:   4
+< 
+<  Enter choice =>  a 
+<  Enter a value:   3
+< 
+<  Enter choice =>  a 
+<  Enter a value:   2
+< 
+<  Enter choice =>  a 
+<  Enter a value:   1
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<              4           
+< 
+< 
+<        2            6           
+< 
+< 
+<     1      3      5      7     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** Comparing test5.out
+1,41d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   9
+< 
+<  Enter choice =>  a 
+<  Enter a value:   10
+< 
+<  Enter choice =>  a 
+<  Enter a value:   11
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<       10     
+< 
+< 
+<     9     11     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** Comparing test6.out
+1,53d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   10
+< 
+<  Enter choice =>  a 
+<  Enter a value:   9
+< 
+<  Enter choice =>  a 
+<  Enter a value:   12
+< 
+<  Enter choice =>  a 
+<  Enter a value:   11
+< 
+<  Enter choice =>  a 
+<  Enter a value:   13
+< 
+<  Enter choice =>  r 
+<  Enter a value:   9
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<             12           
+< 
+< 
+<       10           13           
+< 
+< 
+<    *     11     *     *     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** Comparing test7.out
+1,41d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   9
+< 
+<  Enter choice =>  a 
+<  Enter a value:   11
+< 
+<  Enter choice =>  a 
+<  Enter a value:   10
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<       10     
+< 
+< 
+<     9     11     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** Comparing test8.out
+1,41d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   9
+< 
+<  Enter choice =>  a 
+<  Enter a value:   7
+< 
+<  Enter choice =>  a 
+<  Enter a value:   8
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<        8     
+< 
+< 
+<     7      9     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** Comparing test9.out
+1,59d0
+< 
+<  *** Start of Tree program 
+< ***************************************************************
+< ***                                                         ***
+< ***   m:   display this menu                                ***
+< ***   t:   display the tree (2D)                            ***
+< ***                                                         ***
+< ***   a:   add a value to the tree                          ***
+< ***   r:   remove a value from the tree                     ***
+< ***   f:   find a value in the tree                         ***
+< ***                                                         ***
+< ***   q:   quit the program                                 ***
+< ***                                                         ***
+< ***************************************************************
+< 
+< 
+<  Enter choice =>  z 
+< 
+<  Enter choice =>  t 
+< 
+<  *** Tree is empty 
+<  Enter choice =>  a 
+<  Enter a value:   50
+< 
+<  Enter choice =>  a 
+<  Enter a value:   38
+< 
+<  Enter choice =>  a 
+<  Enter a value:   55
+< 
+<  Enter choice =>  a 
+<  Enter a value:   30
+< 
+<  Enter choice =>  a 
+<  Enter a value:   40
+< 
+<  Enter choice =>  a 
+<  Enter a value:   60
+< 
+<  Enter choice =>  a 
+<  Enter a value:   45
+< 
+<  Enter choice =>  r 
+<  Enter a value:   60
+< 
+<  Enter choice =>  t 
+< 
+< 
+< 
+<             40           
+< 
+< 
+<       38           50           
+< 
+< 
+<    30     *     45     55     
+<  Enter choice =>  q 
+<  *** BYE BYE! ***
+<  *** End of Tree program 
 *** cleaning up ...
 ...tests finished
